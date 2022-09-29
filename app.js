@@ -19,28 +19,9 @@ hamburger_menu.addEventListener('click', () => {
 let form = document.querySelector('#contact_us');
 let div = document.querySelector('.title_content_container');
 
+//submit form message
 form.addEventListener("submit", (event) => {
     event.preventDefault(); 
-    console.log('submitted it');
     form.style.display = 'none';
     div.innerHTML += 'Thanks for contacting us!';
 });
-
-
-//setting variables for filtering
-
-let filter_1 = document.querySelector('.card_button');
-let picture1 = document.querySelector('.destination_container_1');
-let picture2 = document.querySelector('.destination_container_2');
-let picture3 = document.querySelector('.destination_container_3');
-let picture4 = document.querySelector('.destination_container_4');
-let picture5 = document.querySelector('.destination_container_5');
-let picture6 = document.querySelector('.destination_container_6');
-
-filter_1.addEventListener('click', () => {
-    console.log("filter");
-    picture1.style.display = 'none';
-    picture5.style.display = 'none';
-    picture6.style.display = 'none';
-}
-)

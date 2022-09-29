@@ -28,6 +28,7 @@ let picture4 = document.querySelector('.destination_container_4');
 let picture5 = document.querySelector('.destination_container_5');
 let picture6 = document.querySelector('.destination_container_6');
 
+//filter to romantic trips
 filter_1.addEventListener('click', () => {
     console.log("filter");
     picture1.style.visibility = 'hidden';
@@ -36,6 +37,7 @@ filter_1.addEventListener('click', () => {
 }
 );
 
+//filter to adventure trips
 filter_2.addEventListener('click', () => {
     console.log("filter2");
     picture2.style.visibility = 'hidden';
@@ -43,6 +45,7 @@ filter_2.addEventListener('click', () => {
     picture4.style.visibility = 'hidden';
 });
 
+//clear the filters
 clear.addEventListener('click', () => {
     console.log("clear");
     picture1.style.visibility = 'visible';
