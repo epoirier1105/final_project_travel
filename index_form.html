@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Website</title>
+</head>
+<body>
+    <div></div>
+    <nav>
+        <button id="hamburger_menu">
+        </button>
+            <nav id="mobile_menu">
+            <h3 id="close">X</h3>
+              <ul>
+                <li><a id="mobile_link" href="#">Home</a></li>
+                <li><a id="mobile_link" href="#">Destinations</a></li>
+                <li><a id="mobile_link" href="#">Trip Ideas</a></li>
+                <li><a id="mobile_link" href="#">About</a></li>
+              </ul>
+            </nav>
+        <div class="brand" id="brand"><a id="brand" href='index_home.html'>Erin's Travel</a></div>
+        <div class="link" ><a href='index.html' id="main_nav">Home</a></div>
+        <div class="link"><a href='projects.html'  id="main_nav">Destinations</a></div> 
+        <div class="link" ><a href='projects.html' id="main_nav">Trip Ideas</a></div> 
+        <div class="link"><a href='projects.html' id="main_nav">About</a></div> 
+        <div class="link" id="bold_button"><a id="contact" href='index_form.html'>Contact Us</a></div> 
+    </nav>
+    <div class="title_content_container">
+        <h2>Tell us about where you want to go next....</h2>
+        <p>We will respond back within 2 business days</p> 
+    </div>
+    <form id="contact_us">
+        <div id="container_1"></div>
+        <div id="form_row1">
+            <div class="item1">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br><br>
+            </div>
+            <div class="item2">
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+            </div>
+        </div>
+    </div>
+    <div id="container_2">
+        <div id="form_row2">
+            <div class="item3">
+        <label for="lname">Email:</label><br>
+        <input type="text" id="eaddress" name="email" value="email"><br><br>
+    </div>
+    <div class="item4">
+        <label for="lname">Phone:</label><br>
+        <input type="text" id="phone" name="phone" value="phone"><br><br>
+        </div>
+    </div>
+</div>
+    <div id="form_row3">
+        <div class="item5">
+        <label for="lname">Tell us more about what your thinking of</label><br>
+        <textarea id="detail" name="detail" value="detail"></textarea><br><br>
+        </div>
+    </div>
+    <div id="form_row4">
+    <div class="item6">
+        <input type="submit" value="Submit">
+    </div>
+</div>
+    </form>
+    <h2>Get Inspired</h2>
+    <div class="get_inspired_container">
+    <div class="inspiration_container_1">
+        <div class="card_heading">Ancient Wonders of the Inca</div>
+        <br>
+        <img src="peru.jpg" alt="Peru" class="card_image">
+        <br>
+        <div class="card_content">Discover the beauty of Peru with an itinerary that includes Machu Pichu, Lake Titicaca, and Lima </div> 
+        <br>
+        <button class="card_button">Learn More</button>
+        </div>
+        <div class="inspiration_container_2">
+        <div class="card_heading">Wine Tasting and Safari</div>
+        <br>
+        <img src="south_africa.jpg" alt="south_africa" class="card_image">
+        <br>
+        <div class="card_content">Explore the wonders of South Africa with an itinerary that gives time to relax in wine country and view the big 5 on a safari </div>   
+       <br>
+        <button class="card_button">Learn More</button>
+        </div>
+        <div class="inspiration_container_3">
+        <div class="card_heading">Relax in Bora Bora</div>
+        <br>
+        <img src="bora_bora.jpg" alt="Bora Bora" class="card_image">
+        <br>
+        <div class="card_content">Take time to enjoy a true tropical paradise by traveling to multiple islands throughout Tahiti</div>   
+        <br>
+        <button class="card_button">Learn More</button>   
+        </div> 
+        </div>
+</body>
+<script src="app.js"></script>
+</html>
