@@ -140,10 +140,14 @@ h1 {
 
 .h1_button {
     background-color: black;
-    color: white;
     font-size: 150%;
     width: 20%;
     height: 5%;
+}
+
+#main_CTA {
+    color: white;
+    text-decoration: none;
 }
 
 .value_message_container {
@@ -234,6 +238,7 @@ input[type =submit] {
 
 form {
     background-color: rgb(193,170,127);
+    border: 2px solid black;
 }
 
 #form_row1 {
@@ -297,3 +302,49 @@ input {
     z-index: 10 !important;
 }
 
+div[class^='destination_container'] {
+    display: flex;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    justify-items: auto;
+    justify-content: space-around;
+    padding: 10px;
+    border: 5px solid white;
+    transition: box-shadow .3s;
+}
+
+.top_destination_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lower_destination_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width: 750px) {
+    .top_destination_container {
+        display:flex;
+        flex-direction: column;
+    }
+    .lower_destination_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h1_button {
+        width: 50%;
+    }
+    #bold_button {
+        width: 40%;
+    }
+}
+
+div[class^='destination_container']:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
