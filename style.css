@@ -217,7 +217,7 @@ div[class^='inspiration_container']:hover {
     font-weight: bold;
 }
 
-.card_button {
+.card_button{
     color: white;
     background-color: black;
     transition: box-shadow .3s;
@@ -348,3 +348,21 @@ div[class^='destination_container'] {
 div[class^='destination_container']:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
   }
+
+.filter_container {
+    display: flex;
+}
+
+#filter1 {
+    margin: 10px;
+}
+
+#filter2 {
+    margin: 10px;
+}
+
+#clear {
+    margin: 10px;
+    font-size: 14px;
+    color:rgb(128, 128, 128);
+}

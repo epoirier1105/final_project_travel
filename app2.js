@@ -15,21 +15,12 @@ hamburger_menu.addEventListener('click', () => {
     mobile_menu.classList.toggle("show_menu");
 });
 
-//setting variables for form submit
-let form = document.querySelector('#contact_us');
-let div = document.querySelector('.title_content_container');
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault(); 
-    console.log('submitted it');
-    form.style.display = 'none';
-    div.innerHTML += 'Thanks for contacting us!';
-});
-
 
 //setting variables for filtering
 
-let filter_1 = document.querySelector('.card_button');
+let filter_1 = document.querySelector('#filter1');
+let filter_2 = document.querySelector('#filter2');
+let clear = document.querySelector('#clear');
 let picture1 = document.querySelector('.destination_container_1');
 let picture2 = document.querySelector('.destination_container_2');
 let picture3 = document.querySelector('.destination_container_3');
@@ -39,8 +30,26 @@ let picture6 = document.querySelector('.destination_container_6');
 
 filter_1.addEventListener('click', () => {
     console.log("filter");
-    picture1.style.display = 'none';
-    picture5.style.display = 'none';
-    picture6.style.display = 'none';
+    picture1.style.visibility = 'hidden';
+    picture5.style.visibility = 'hidden';
+    picture6.style.visibility = 'hidden';
 }
-)
+);
+
+filter_2.addEventListener('click', () => {
+    console.log("filter2");
+    picture2.style.visibility = 'hidden';
+    picture3.style.visibility = 'hidden';
+    picture4.style.visibility = 'hidden';
+});
+
+clear.addEventListener('click', () => {
+    console.log("clear");
+    picture1.style.visibility = 'visible';
+    picture2.style.visibility = 'visible';
+    picture3.style.visibility = 'visible';
+    picture4.style.visibility = 'visible';
+    picture5.style.visibility = 'visible';
+    picture6.style.visibility = 'visible';
+});
+
